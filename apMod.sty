@@ -1,0 +1,67 @@
+\ProvidesPackage{apMod}
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage{amsmath} 
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{longtable}
+\renewcommand*{\arraystretch}{1.4}
+\pagenumbering{gobble} 
+
+\author{Anindya Prithvi}
+
+\hypersetup{
+    colorlinks = true,
+    linkbordercolor = {white}
+}
+
+\newcommand{\sectionC}[1]{{%
+\colorbox{gray!30}{
+\minipage{\textwidth}%
+    \textbf{#1}
+\endminipage\hfill%
+}}\vspace{-10px}}
+
+\newcommand{\cvimage}[1]{%
+    \setlength{\fboxsep}{0pt}%
+    \setlength{\fboxrule}{1pt}%
+    \fbox{\includegraphics[height=100pt, keepaspectratio]{#1}}%
+    \vspace{10pt}
+}
+
+\newcommand{\personalinfo}{%
+\begin{center}
+        \textbf{\Large \yourname}\\
+        \vspace{2pt}
+        Roll no. \yourrollno\space$\vert$ \href{mailto:\youremail}{\color{blue!60}\youremail}\\
+        DOB: \yourDOB\\
+        \youraddress\\
+        \vspace{2pt}
+        \includegraphics[height=10pt, keepaspectratio]{githublogodark.png}\space\href{\yourgithub}{\color{blue!60} Github}
+\end{center}
+}%
+
+\newcommand{\cvheader}{%
+\minipage{0.18\textwidth}%
+  \cvimage{\yourphoto}%insert your photo file here
+\endminipage\hfill
+\minipage{0.60\textwidth}%
+    \personalinfo
+\endminipage\hfill
+\minipage{0.18\textwidth}%
+  \begin{frame}{}
+      \includegraphics[width=\linewidth]{iiitdlogo.jpg}
+  \end{frame}
+\endminipage\hfill
+}
+
+\newcommand{\cveducationitem}[4]{%
+\textbf{#1}\newline
+    #2\newline
+    #3
+    & #4\newline\\
+}%
+
+
