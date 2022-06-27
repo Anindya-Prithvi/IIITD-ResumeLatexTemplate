@@ -3,30 +3,32 @@
 % Licensed: https://www.gnu.org/licenses/gpl-3.0.html
 % Template author: Anindya Prithvi
 % define all your stuff here
-\newcommand{\yourname}{Anindya Prithvi}%
-\newcommand{\youremail}{anindya20024@iiitd.ac.in}%
-\newcommand{\youraddress}{Address: F-16, Phyter 2, Tensorflow Plot 2,\\Sector Pi, Alpha, Beta, India}%
+\newcommand{\yourname}{Mikasa Hackerman}%
+\newcommand{\youremail}{mikasaH@iiitd.ac.in}%
+\newcommand{\youraddress}{Address: F-16, Shiganshina District\\Near Wall Maria, Paradise Island}%
 \newcommand{\yourrollno}{2020024}%
 \newcommand{\yourDOB}{15 September, 2002}%
 \newcommand{\yourgithub}{https://github.com/Anindya-Prithvi}%
-\newcommand{\yourphoto}{myphoto}% Only the filname.extension
+\newcommand{\yourphoto}{myphoto}% Only the filname without extension
 
-\newcommand{\yourlieinapril}{Shigatsu wa kimi no uso}%
+\newcommand{\yourlieinapril}{Shigatsu wa kimi no uso}%lol
+
+\newcommand{\contain}{0}%1 if you make each section of your resume inseperable (try and see) This was added to deal with newpage within section
 
 \begin{document}
 \cvheader%
 %
-\noindent\minipage{\textwidth}%
+\begin{contained}
 \sectionC{Education}
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
     \cveducationitem{Indraprastha Institute of Information Technology, Delhi}{B.Tech (CSE)}{2020 - present}{CGPA: 10.1\newline(Till 4\textsuperscript{th} semester)}
-    \cveducationitem{Alpha Beta School, Gamma, New Delta}{CBSE, Standard 12, PCM+CS}{2018-2020}{Percentage : 99.8\%}
-    \cveducationitem{Sigma Paimon School, New Jersey}{CBSE, Standard 10}{2017 - 2018}{Percentage : 99.98\%}
+    \cveducationitem{Trost District High School}{CBSE, Standard 12, PCM+CS}{2018-2020}{Percentage : 99.8\%}
+    \cveducationitem{Shiganshina International School}{CBSE, Standard 10}{2017 - 2018}{Percentage : 99.98\%}
 \end{longtable}%
 \vspace{0pt}
-\endminipage\hfill
+\end{contained}
 %
-\noindent\minipage{\textwidth}%
+\begin{contained}
 \sectionC{Skills}
 %nothing to modularize here, just write your stuff
 \begin{longtable}{p{0.2\textwidth}p{0.75\textwidth}p{0.05\textwidth}}
@@ -42,9 +44,23 @@
     Grape Theory, Statistical Machine Earning, Not Practical Bioinformatics, Singles and Systems, Computer Disassembly
 \end{longtable}%
 \vspace{0pt}
-\endminipage\hfill
+\end{contained}
 %
-\noindent \minipage{\textwidth}%
+\begin{contained}
+\sectionC{Work Experience}
+%nothing to modularize here, just write your stuff
+\\
+\begingroup%
+\renewcommand\arraystretch{1}%
+\begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
+    \textbf{Recapture Wall Maria, Eldia United}&(Jun, 21 - Present)\\
+    {Advisor: Dr. Erwin Smith, Taicho}\\
+    We were tasked with detaining Reiner, a marleyan warrior tasked to end Eldia. We could not do it, however Armin succeeded in his plan. Armin is now the Colossal Titan. Berthdolt Shindayo. However we recently came to know that there is a whole world w/o us.
+\end{longtable}%
+\endgroup%
+\end{contained}
+\vspace{0pt}
+\begin{contained}
 \sectionC{Projects}
 % \vspace{-10pt}%
 %nothing to modularize here, just write your stuff
@@ -80,48 +96,42 @@
     &Individual
     \newline (May, 22 - Present)\\
 \end{longtable}
-\endminipage\hfill
+\end{contained}
 \vspace{0pt}
-\noindent \minipage{\textwidth}%
+\begin{contained}
 \sectionC{Positions of Responsibility}
 % \vspace{-10pt}
 \begin{longtable}{p{0.8\textwidth}p{0.19\textwidth}p{0.01\textwidth}}
-    Events and Content Writer @ ACM-IIITD Student Chapter & (Jan,21 – Jan,22)\\
-    Member @ Cyborg-IIITD & (Jul,21 - Oct,21)\\
-    Core Member @ d4rkc0de CyberSec club of IIITD & (Jan,22 - Present)\\
-    Mentor (Volunteer) @ Teach Like a Friend (initiative by IIITD) & (Jun, 22 - Present)\\
+    Squad Coleader with Hange san & (Jan,21 – Jan,22)\\
+    Member @ Historia Club & (Jul,21 - Oct,21)\\
+    Core Member @ Eren Jager simping & (Jan,22 - Present)\\
 \end{longtable}
 \vspace{0pt}
-\endminipage\hfill
-\noindent\minipage{\textwidth}%
+\end{contained}
+\begin{contained}
 \sectionC{Awards and Achievements}
 \vspace{0pt}
 \begin{itemize}
     \setlength\itemsep{0.5pt}
-    \item First position in Anveshan 2022 Hackathon (Team Macaroon)
-    \item Accepted contribution to Mozilla DN, Vyperlang, min-browser, Nix-os on GitHub
+    \item First position in Titan slaying Hackathon (Team Levi)
     \item 2.2k reputation on stack-exchange network. \href{https://math.stackexchange.com/users/811225}{\color{red!70} Math SE}
     \item Second position in DTU DareToComplete CTF 2022 (open for all)
-    \item First position d4rkc0de intracollege CTF Jan,2022
-    \item 99.32 percentile in JEE mains, Jan,2020
-    \item Ratna Bharati in Art and Craft - Bharati Kala Kendra Lucknow (2018)
-    \item Multiple medals in Taekwondo (2012 and earlier)
+    \item 99.32 percentile in Shiganshina Entrance Exam mains, Jan, 2020
 \end{itemize}
 \vspace{0pt}
-\endminipage\hfill
+\end{contained}
 \sectionC{Interests and Hobbies}
-\minipage{\textwidth}%
-\vspace{12pt}
+\begin{contained}\\
 \begin{itemize}
     \setlength\itemsep{0.5pt}
-    \item Exploratory Data Analysis
+    \item Eren
     \item Chess
     \item Reverse Engineering
     \item Wayland/X11 based window compositors
     \item \LaTeX
 \end{itemize}
-\vspace{5pt}
-\endminipage\hfill
+% \vspace{5pt}
+\end{contained}
 Declaration: The above information is correct to the best of my knowledge.\newline
 \yourname\newline
 Date: \today

@@ -17,7 +17,25 @@
     linkbordercolor = {white}
 }
 
+
+\newenvironment{contained}%
+{%
+\ifx\contain\undefined\else%
+\if\contain1%
+\noindent\minipage{\textwidth}%
+\else%
+\fi%
+\fi}%
+{%
+\ifx\contain\undefined\else%
+\if\contain1%
+\endminipage\hfill%
+\else%
+\fi%
+\fi}%
+    
 \newcommand{\sectionC}[1]{{%
+\noindent%
 \colorbox{gray!30}{
 \minipage{\textwidth}%
     \textbf{#1}
