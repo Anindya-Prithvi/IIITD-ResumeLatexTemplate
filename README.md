@@ -1,5 +1,5 @@
 # IIIT Delhi Resume
-A fully-customizable resume template in IIIT Delhi format made with $\LaTeX$. I created this template for the on-campus internship placements because why not.
+A fully-customizable resume template in IIIT Delhi format made with $\LaTeX$. I created this template for the on-campus internship/placements because why not.
 
 I am a $\LaTeX$ god.
 
@@ -22,11 +22,11 @@ Your resume should typically be a single page, but the IIITD format is a bit rig
 
 # Sample
 - Open the IIITD_Resume_template.pdf
-- Alternatively, visit [here](https://anindya-prithvi.github.io/filehost/IIITD_Resume_template.pdf)
+- Alternatively, visit [here](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/master/IIITD_Resume_template.pdf)
 ![page1](assets/Page1.png)  
 ![page2](assets/Page2.png)
 
 ___
 
 Readme adopted from [Ananya Lohani's previous work (HTML/CSS based)](https://github.com/ananyalohani/iiitd-resume)  
-Image of Viper(from Valorant) distributed under creative commons.
+Image of Mikasa Ackerman(from AOT) distributed under creative commons.

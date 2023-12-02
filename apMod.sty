@@ -7,8 +7,12 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{longtable}
+\usepackage{tikz}
+\usepackage{graphicx}
+
 \renewcommand*{\arraystretch}{1.4}
-\pagenumbering{gobble} 
+\pagenumbering{gobble}
+
 
 \author{Anindya Prithvi}
 
@@ -33,14 +37,24 @@
 \else%
 \fi%
 \fi}%
-    
+
 \newcommand{\sectionC}[1]{{%
 \noindent%
-\colorbox{gray!30}{
-\minipage{\textwidth}%
-    \textbf{#1}
-\endminipage\hfill%
-}}\vspace{-10px}}
+% \colorbox{gray!30}{
+% \minipage{\textwidth}%
+%     \textbf{#1}
+% \endminipage\hfill%
+% }}%
+\tikzstyle{sectionCstyle} = [fill=gray!30,
+    rectangle, rounded corners, inner sep=5pt, inner ysep=5pt]
+\begin{tikzpicture}
+\node [sectionCstyle] (box){%
+    \begin{minipage}{\textwidth}
+        \textbf{#1}
+    \end{minipage}
+};
+\end{tikzpicture}%
+\vspace{-10px}}}
 
 \newcommand{\cvimage}[1]{%
     \setlength{\fboxsep}{0pt}%
@@ -63,7 +77,14 @@
 
 \newcommand{\cvheader}{%
 \minipage{0.18\textwidth}%
-  \cvimage{\yourphoto}%insert your photo file here
+  % \cvimage{\yourphoto}%insert your photo file here
+  \begin{tikzpicture} 
+    \begin{scope}[xshift=7cm]
+        \clip [rounded corners=.3cm] (0,0) rectangle coordinate (centerpoint) (100pt,100pt); 
+        \node [inner sep=0pt] at (centerpoint) {\includegraphics[width=100pt]{\yourphoto}};
+    \end{scope}
+  \end{tikzpicture}
+  \vspace{10pt}
 \endminipage\hfill
 \minipage{0.60\textwidth}%
     \personalinfo
