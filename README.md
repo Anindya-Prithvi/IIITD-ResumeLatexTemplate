@@ -17,10 +17,15 @@ The styles can be edited according to your preference in apMod.sty. I've added t
 Your resume should typically be a single page, but the IIITD format is a bit rigid so it's okay if your IIITD resume extends to two pages. Try not to make it beyond two pages though.
 
 # Steps To Set Up
-- Download the repository
+- Download from releases (There is currently a squared version and a rounded version)
 - Compile (You may use mikitex OR just upload it on Overleaf, it's simple)
 
-# Sample
+# Sample (Squared Version)
+- Visit [here](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/3736daf7413ce76b76a0977dfc651773c39c1476/IIITD_Resume_template.pdf)
+![page1o](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/3736daf7413ce76b76a0977dfc651773c39c1476/assets/Page1.png)  
+![page2o](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/3736daf7413ce76b76a0977dfc651773c39c1476/assets/Page2.png)  
+
+# Sample (Rounded Version : Main)
 - Open the IIITD_Resume_template.pdf
 - Alternatively, visit [here](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/master/IIITD_Resume_template.pdf)
 ![page1](assets/Page1.png)  
