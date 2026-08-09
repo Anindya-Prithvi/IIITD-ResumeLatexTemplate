@@ -1,3 +1,5 @@
+
+
 # IIIT Delhi Resume
 A fully-customizable resume template in IIIT Delhi format made with $\LaTeX$. I created this template for the on-campus internship/placements because why not.
 
@@ -18,7 +20,7 @@ Your resume should typically be a single page, but the IIITD format is a bit rig
 
 # Steps To Set Up
 - Download from releases (There is currently a squared version and a rounded version)
-- Compile (You may use mikitex OR just upload it on Overleaf, it's simple)
+- Compile (You may use MiKTeX OR just upload it on Overleaf, it's simple)
 
 # Sample (Squared Version)
 - Visit [here](https://github.com/Anindya-Prithvi/IIITD-ResumeLatexTemplate/blob/3736daf7413ce76b76a0977dfc651773c39c1476/IIITD_Resume_template.pdf)
